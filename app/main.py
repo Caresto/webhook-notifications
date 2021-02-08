@@ -4,7 +4,7 @@ import requests
 import json
 
 app = Flask(__name__)
-url_to_post = os.getenv('BASECAMP_URL')
+url_to_post = os.getenv('URL')
 
 @app.route('/events', methods=['POST'])
 def events():
